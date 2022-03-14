@@ -1,0 +1,18 @@
+{
+	"name": "camera-control",
+	"displayName": "Camera Control",
+	"icon": "icon.svg",
+	"author": "luucy AG",
+	"version": "1.0.1",
+	"internal": true,
+	"dependencies": {
+		"luucy-types": "^7.5.2",
+		"typescript": "^4.6.2"
+	},
+	"scopes": [
+		"core",
+		"ui",
+		"map",
+		"map.camera"
+	]
+}
