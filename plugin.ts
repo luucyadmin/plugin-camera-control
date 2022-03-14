@@ -43,8 +43,6 @@ const addCamera = (camera: StoredCamera) => {
     });
 
     section.createAction(ui.icons.close, 'Remove Camera', async () => {
-        console.log(cameras, camera);
-
         cameras.splice(cameras.indexOf(camera), 1);
         save();
         
