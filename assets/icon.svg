@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Artboard</title>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="512" height="512"></rect>
-        <g id="Group" transform="translate(62.000000, 133.000000)" fill="#000000">
-            <polygon id="Path" points="226 123 389 246 389 0"></polygon>
-            <polygon id="Path" points="0 0 -1.4158813e-14 246 308 246 308 0"></polygon>
-        </g>
+    <title>icon</title>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#BAFFBB" x="0" y="0" width="512" height="512"></rect>
+        <polygon id="Path" stroke="#000000" stroke-width="20" fill="#FFFFFF" points="255.856133 133.177753 255.85481 133.31334 312.75471 133.313575 333.175494 153.734359 402.693377 153.734359 418.380122 169.421103 418.380122 362.355186 402.693377 378.04193 255.85481 378.040625 255.856133 378.177753 108.675103 378.177753 92.970946 362.473596 92.970946 169.32536 108.675103 153.621203 178.270149 153.621203 198.7136 133.177753"></polygon>
+        <circle id="Oval" stroke="#000000" stroke-width="20" fill="#FFFFFF" cx="255.856133" cy="261.154357" r="67.585984"></circle>
     </g>
 </svg>

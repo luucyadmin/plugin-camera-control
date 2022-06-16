@@ -4,6 +4,7 @@ const storageKey = 'cameras';
 let cameras: StoredCamera[] = [];
 
 const section = ui.createProjectPanelSection();
+section.add(new ui.Paragraph('Move the camera to an interesting location and click on Save Camera to save the current camera location! You can restore the cameras by click on fly to camera below'))
 
 section.add(new ui.Button(ui.icons.plus, 'Save Camera', async () => {
     const name = new Date().toLocaleString();
@@ -28,6 +29,13 @@ section.add(cameraContainer);
 const addCamera = (camera: StoredCamera) => {
     const section = new ui.Section(new Date(camera.date).toLocaleString());
 
+    section.createAction(ui.icons.close, 'Remove Camera', async () => {
+        cameras.splice(cameras.indexOf(camera), 1);
+        save();
+        
+        cameraContainer.remove(section);
+    });
+
     if (cameraContainer.children[0]) {
         cameraContainer.insertBefore(section, cameraContainer.children[0]);
     } else {
@@ -40,13 +48,6 @@ const addCamera = (camera: StoredCamera) => {
     name.onValueChange.subscribe(() => {
         camera.name = name.value;
         save();
-    });
-
-    section.createAction(ui.icons.close, 'Remove Camera', async () => {
-        cameras.splice(cameras.indexOf(camera), 1);
-        save();
-        
-        cameraContainer.remove(section);
     });
 
     section.add(new ui.Button('Fly to camera', () => {
