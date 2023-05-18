@@ -6,7 +6,7 @@
 	"version": "1.0.1",
 	"internal": true,
 	"dependencies": {
-		"luucy-types": "^8.14.4",
+		"luucy-types": "^10.20.3",
 		"typescript": "^4.6.2"
 	},
 	"scopes": [
